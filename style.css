@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  position: absolute;
+  width: 100%;
+  height: 10vh;
+  font-family: 'Courier New', Courier, monospace;
+  color: #e7eded;
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-align: center;
+  top: 3rem;
+}
+
+.banner span {
+  color: #ffb618;
+}
+
+.info {
+  position: absolute;
+  top: 10rem;
+  left: 3rem;
+  width: 30%;
+  height: 60vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 1px;
+  color: #111112;
+  background-color: #ffffffdd;
+  border-radius: 20px;
+}
+
+.info>h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 15px;
+  color: #ce8c00;
+  margin-bottom: 3px;
+}
+
+.info>p {
+  width: 90%;
+  height: 43vh;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 20px 10px;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+  width: 6px;
+  background-color: #f5f5f5c8;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #ffb618;
+  border-radius: 5px;
+}
+
+.btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 4rem;
+}
+
+.btn > button {
+  width: 260px;
+  height: 45px;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  border: none;
+  font-weight: 800;
+  background-color: #fda90eeb;
+  letter-spacing: 1.4px;
+  font-family: cursive;
+}
+
+@media only screen and (max-width: 414px) {
+  .banner{
+    font-size: 2rem;
+  }
+  .info{
+    top: 14rem;
+    width: 30vh;
+    height: 35vh;
+  }
+  .info>p{
+    height: 15vh;
+  }
+  .btn{
+    bottom: 6rem;
+  }
+}
